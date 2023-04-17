@@ -60,18 +60,7 @@ a[title] {
    margin-bottom: 1em;
 }
 
-a[title]:after {
-   content: attr(title);
-   position: absolute;
-   top: 100%;
-   display: block;
-   text-align: center;
-   width: 10%;
-   left: 0;
-}	
-a[title="Paper"] {
-   background-image: url('images/icon_paper.png');
-}
+
 	
 </style>
 </head>
@@ -82,13 +71,16 @@ a[title="Paper"] {
       <a href="https://scholar.google.com.tr/citations?user=axeVg8IAAAAJ&hl=en&oi=ao">Thomas Bashford-Rogers</a><sup>2</sup></p>
   <p><sup>1</sup>Birmingham City University, UK,    <sup>2</sup>University of Warwick, UK</p>
 
-		
+
+  <a title="Paper" href="https://pagedart.com">
+  <img src="images/icon_paper.png">
+  </a>	
       <a title="Paper" href="#"></a> 
 
 	
 <div  class="container">
 <iframe class ="video"   src="https://drive.google.com/file/d/1CjPs4FqiS5xdtyS664lWRiOT5AjUH9eY/preview" ></iframe>
-	</div>
+</div>
 	
   <h1 class="p">Abstract</h1>
   <p> Sky illumination is a core source of lighting in rendering, and a substantial amount of work has been developed to simulate 
