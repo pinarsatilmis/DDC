@@ -1,2 +1,2 @@
 # pinarsatilmis.github.io/DDC
-Deep Dynamic Cloud lighting webpage
+Deep Dynamic Cloud Lighting webpage
