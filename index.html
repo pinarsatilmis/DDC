@@ -1,1 +1,178 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 0.9em;
+}
+	
+h1 {text-align: center;}
+h2 {text-align: center;}
+.p_even {
+   text-align: justify;
+   margin-left:20%;
+   margin-right:20%;
+   /*font-size: 0.875em; 1.2em 14px/16=0.875em */
+}
+.p_center{
+   text-align: center;
+   margin-left:17.5%;
+   margin-right:17.5%;
+  /*font-size: 0.9em; 1.2em 14px/16=0.875em */
+}
+.a_paper{
+   text-align:center; font-family: 'Lato', Verdana, Helvetica, sans-serif; 
+   font-size: 0.9em;
+   text-decoration:none;
+   color:#333399;
+}
+	
+link {text-align: center;}
+div {text-align: center;}
+video {display: block;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 65%;
+}
+
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top : 2%;
+  width: 9.5%;
+}
+.center_bottom {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}	
+	
+.video-container {
+    width: 75%;
+    padding-top: 45%;
+    height: 0px;
+    position: relative;
+    top: 22%;
+    left: 22%;
+    margin-bottom : -10%;
+}
+
+.video {
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.author_column {
+    float: left;
+    width: 35%; 
+}
+.author_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.author_row-centered {
+    margin-left: 25%;
+}
+	
+</style>
+</head>
+<body>
+
+  <h1 style="font-size: 32px" >A multi-timescale image space model for dynamic cloud illumination</h1>
+    
+  <div class="author_row author_row-centered" >
+      <div class="author_column">
+		<a style="text-align:center; font-family: 'Lato', Verdana, Helvetica, sans-serif; 
+   font-size: 0.9em; text-decoration:none; color:#333399;"  href="https://scholar.google.com.tr/citations?user=YxXiq_YAAAAJ&hl=en" target="_blank"> 
+			<strong>Pinar Satilmis</strong>
+	        </a>
+		</br>Birmingham City University,
+	        </br>UK
+      </div>
+      <div class="author_column" >
+		<a style="text-align:center; font-family: 'Lato', Verdana, Helvetica, sans-serif; 
+   font-size: 0.9em; text-decoration:none; color:#333399;"  href="https://scholar.google.com.tr/citations?user=axeVg8IAAAAJ&hl=en&oi=ao" target="_blank">
+			<strong>Thomas Bashford-Rogers</strong>
+	        </a>
+		</br>University of Warwick,
+	        </br>UK
+      </div>
+  </div>
+
+  <a class="a_paper" href="https://arxiv.org/abs/2304.09317" target="_blank">
+  <div class="icon">
+          <img src="images/icon_paper.png"">
+          </br><strong>Paper</strong>
+  </div>
+  </a>	
+	
+  <h2>Abstract</h2>
+  <p class="p_even"> Sky illumination is a core source of lighting in rendering, and a substantial amount of work has been developed to simulate 
+	  lighting from clear skies. However, in reality, clouds substantially alter the appearance of the sky and subsequently 
+	  change the scene illumination. While there have been recent advances in developing sky models which include clouds, these 
+	  all neglect cloud movement which is a crucial component of cloudy sky appearance. In any sort of video or interactive environment, 
+	  it can be expected that clouds will move, sometimes quite substantially in a short period of time. Our work proposes a solution to 
+	  this which enables whole-sky dynamic cloud synthesis for the first time. We achieve this by proposing a multi-timescale sky 
+	  appearance model which learns to predict the sky illumination over various timescales, and can be used to add dynamism to previous 
+	  static, cloudy sky lighting approaches.
+  </p>
+
+  <h2> Method Overview</h2>
+  <div class="img">
+          <img src="images/OverviewMethod.png" alt="Overview">
+  </div>
+
+
+  <h2>Video</h2>	
+  <div class="video-container">						     
+  <iframe class ="video" src= "https://drive.google.com/file/d/1dXYqX-9I7yC_WhwWtt8uRg3T83pzC-xd/preview"></iframe>
+  </div>
+
+  <h2>BibTeX</h2>
+     <div class="p_even">
+      <pre>
+	<code>@article{SATILMIS2025104124,
+		title = {A multi-timescale image space model for dynamic cloud illumination},
+		journal = {Computers & Graphics},
+		volume = {126},
+		pages = {104124},
+		year = {2025},
+		issn = {0097-8493},
+		doi = {https://doi.org/10.1016/j.cag.2024.104124},
+		url = {https://www.sciencedirect.com/science/article/pii/S0097849324002590},
+		author = {Pinar Satilmis and Thomas Bashford-Rogers}
+		}
+        </code>
+      </pre>
+    </div>
+		   
+  <h2>Acknowledgements</h2>		
+  <p class="p_even"> We gratefully acknowledge the support of NVIDIA Corporation with the donation of the RTX A6000 used for this research. 
+		   We also would like to thank the following for the scenes and models used in this work: MrChimp2313, Alim Zhilov, Noker, 
+		   timothyjamesbusch, alplaleli, and Helena-Merlot.	
+  </p>												 
+													 
+</body>	
+</html>
